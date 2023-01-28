@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 20px 40px 70px 40px;
+    border-radius: 20px;
+    background-color: hsla(216, 50%, 12%, 0.4);
+}
+
+.container {
+    width: min-content;
+    padding: 1.2em;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+
+    -webkit-box-shadow: 1px 30px 5px 13px rgba(0,0,0,0);
+    -moz-box-shadow: 1px 30px 5px 13px rgba(0,0,0,0);
+    box-shadow: 1px 30px 0 13px hsl(216, 50%, 10%)
+}
+
+.container .images {
+    position: relative;
+}
+
+.container img:nth-of-type(1) {
+    width: 280px;
+    border-radius: 8px;
+}
+
+.container .images img:nth-of-type(2) {
+    display: none;
+    width: 40px;
+    position: absolute;
+    left: 120px;
+    top: 120px;
+}
+
+.container .images:hover {
+    cursor: pointer;
+}
+
+.container .images:hover > img:nth-of-type(1) {
+    opacity: 0.7;
+    filter: sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(200%);
+    cursor: pointer;
+}
+
+.container .images:hover > img:nth-of-type(2) {
+    display: initial;
+}
+
+.container h3 {
+    margin: 1em 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.container h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.container p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.container .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .price p:first-child {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.container svg {
+    width: 16px;
+    margin-bottom: 2px;
+    vertical-align:middle;
+    margin-right: 5px;
+}
+
+.container hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin: 0.5em 0;
+}
+
+.container .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.container .avatar img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.container .avatar p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.container .avatar p span {
+    color: hsl(0, 0%, 100%);
+}
+
+.container .avatar p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
