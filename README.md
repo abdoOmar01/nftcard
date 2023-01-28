@@ -45,6 +45,10 @@ Users should be able to:
 
 The most challenging thing was getting the eye picture to show on top of the image, and getting the image to have this sort of blue hue
 
+EDIT: [@Hassiai](https://www.frontendmentor.io/profile/Hassiai) helped me get the overlay effect, instead of filtering the image.
+
+So instead of this:
+
 ```css
 .container .images:hover {
     cursor: pointer;
@@ -57,6 +61,29 @@ The most challenging thing was getting the eye picture to show on top of the ima
 }
 
 .container .images:hover > img:nth-of-type(2) {
+    display: initial;
+}
+```
+
+It becomes this:
+
+```css
+.container .overlay {
+    position: absolute;
+    top:0 ;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:  hsla(178, 100%, 50%, 0);
+    border-radius: 10px;
+    height: 280px;
+}
+
+.container .images:hover .overlay {
+    background-color: hsla(178, 100%, 50%, 0.6);
+}
+
+.container .images:hover #eye {
     display: initial;
 }
 ```
