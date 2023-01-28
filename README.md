@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nft-card-lAXe3Dk8vJ)
 - Live Site URL: [Live Site](https://abdoomar01.github.io/nftcard/)
 
 ## My process
@@ -68,4 +68,4 @@ The most challenging thing was getting the eye picture to show on top of the ima
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@abdoOmar01](https://www.frontendmentor.io/profile/abdoOmar01)
